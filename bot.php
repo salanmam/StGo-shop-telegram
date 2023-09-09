@@ -26,7 +26,7 @@ function bot($method,$datas=[]){
     curl_setopt($ch,CURLOPT_POSTFIELDS,$datas);
     $res = curl_exec($ch);
     if(curl_error($ch)){
-        var_dump(curl_error($ch));
+        var_dump(curl_error($en));
     }else{
         return json_decode($res);
     }
