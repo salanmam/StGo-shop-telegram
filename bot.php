@@ -82,7 +82,7 @@ return $r;
 function SendDocument($chat_id,$document){
   bot('SendDocument',[
   'chat_id'=>$chat_id,
-  'document'=>$document,
+  'document'=>$document
    ]);
   }
 function ema($txt){
