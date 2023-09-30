@@ -105,6 +105,7 @@ $a2 = "@$channel";
 $a2 = str_replace("+8!-8!+","&", $a2);
 $a2 = str_replace("+5!-5!+","=", $a2);
 $a2 = str_replace("+1!-1!+","!", $a2);
+$conn = new mysqli($servername, $username, $password, $dbname);
 $r[$a1] = $a2;
 }
 
