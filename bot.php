@@ -6,7 +6,6 @@ include('jdf.php');
 $telegram_ip_ranges = [
     ['lower' => '149.154.160.0', 'upper' => '149.154.175.255'], 
     ['lower' => '91.108.4.0',    'upper' => '91.108.7.255'],    
-];
 
 $ip_dec = (float) sprintf("%u", ip2long($_SERVER['REMOTE_ADDR']));
 $ok=false;
