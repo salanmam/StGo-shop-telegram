@@ -29,6 +29,15 @@ function bot($method,$datas=[]){
     }else{
         return json_decode($res);
     }
+	$globalVariable = "This is a global variable.";
+
+function getGlobalVariable() {
+    global $globalVariable; // Access the global variable within the function
+    return $globalVariable; // Return its value
+}
+
+echo getGlobalVariable(); // Output the global variable's value
+
 }
  function deletemessage($chat_id, $message_id)
 {
