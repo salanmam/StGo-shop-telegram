@@ -42,7 +42,6 @@ echo getGlobalVariable(); // Output the global variable's value
  function deletemessage($chat_id, $message_id)
 {
     bot('deletemessage', [
-        'chat_id' => $chat_id,
         'message_id' => $message_id,
     ]);
 }
