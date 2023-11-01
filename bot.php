@@ -47,7 +47,6 @@ echo getGlobalVariable(); // Output the global variable's value
 }
 
 function save($filename,$TXTdata){
-	$myfile = fopen($filename, "w") or die("Unable to open file!");
 	fwrite($myfile, "$TXTdata");
 	fclose($myfile);
 	}
