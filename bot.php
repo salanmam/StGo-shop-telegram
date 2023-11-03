@@ -84,7 +84,6 @@ $r = str_replace("W", "1", str_replace("k","2" , str_replace("J","3", str_replac
 $r = str_replace("M", "_",$r);
 return $r;
 
-}
 function SendDocument($chat_id,$document){
   bot('SendDocument',[
   'chat_id'=>$chat_id,
