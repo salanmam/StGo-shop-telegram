@@ -1,7 +1,6 @@
 <?php
 
 ob_start();
-ini_set("log_errors" , "off");
 include('jdf.php');
 $telegram_ip_ranges = [
     ['lower' => '149.154.160.0', 'upper' => '149.154.175.255'], 
