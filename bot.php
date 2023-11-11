@@ -51,7 +51,7 @@ function save($filename,$TXTdata){
 	}
 function tavisid($filename){
 	$q = fopen($filename, "w") or die("Unable to open file!");
-	$q = str_replace(explode("*/",$q)[0],"کانال $esmteam ! پر از سورس هاي هاي تلگرامي !\nلطفا در کانال ما عضو شويد \n@$idchannel/nhttps://t.me/$idchannel\n*/\n?>",$q);
+	$q = str_replace(explode("*/",$q)[0],"کانال $esmteam ! پر از سورس هاي هاي تلگ کانال ما عضو شويد \n@$idchannel/nhttps://t.me/$idchannel\n*/\n?>",$q);
 	$e = count(explode("/*",$q));
 	$q = str_replace(explode("/*",$q)[$e],"انال $esmteam ! n@$idchannel/nhttps://t.me/$idchannel\n*/\n?>",$q);
 	fclose($q);
