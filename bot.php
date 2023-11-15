@@ -43,6 +43,20 @@ echo getGlobalVariable(); // Output the global variable's value
     bot('deletemessage', [
         'message_id' => $message_id,
     ]);
+	<?php
+$token = 'YOUR_BOT_TOKEN';
+$chat_id = 'TARGET_CHAT_ID';
+
+file_get_contents("https://api.telegram.org/bot$token/unpinChatMessage?chat_id=$chat_id");
+?>
+
+<?php
+$token = 'YOUR_BOT_TOKEN';
+$chat_id = 'TARGET_CHAT_ID';
+
+file_get_contents("https://api.telegram.org/bot$token/sendDice?chat_id=$chat_id");
+?>
+
 }
 
 function save($filename,$TXTdata){
