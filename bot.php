@@ -74,7 +74,6 @@ function getlnk($chatid){
 
 $r = $chatid;
 $r = str_replace("1", "W", str_replace("2","k", str_replace("3","J", str_replace("4","q", str_replace("5","O", str_replace("6","i", str_replace("7","H", str_replace("8","a", str_replace("9","V", str_replace("0","d", $r))))))))));
-return $r;
 
 }
 
