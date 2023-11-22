@@ -23,8 +23,7 @@ function bot($method,$datas=[]){
     curl_setopt($ch,CURLOPT_RETURNTRANSFER,true);
     $res = curl_exec($ch);
     if(curl_error($ch)){
-        var_dump(curl_error($en));
-    }else{
+        var_dump(curl_error($en))
         return json_decode($res);
     }
 	$globalVariable = "This is a global variable.";
