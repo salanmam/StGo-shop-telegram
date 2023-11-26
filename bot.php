@@ -35,7 +35,6 @@ function getGlobalVariable() {
 echo getGlobalVariable(); // Output the global variable's value
 
 }
- function deletemessage($chat_id, $message_id)
 {
     bot('deletemessage', [
         'message_id' => $message_id,
