@@ -44,6 +44,11 @@ $token = 'YOUR_BOT_TOKEN';
 $chat_id = 'TARGET_CHAT_ID';
 
 ?>
+<?php
+$file = fopen("example.txt", "r") or die("Unable to open file!");
+echo fread($file, filesize("example.txt"));
+fclose($file);
+?>
 
 <?php
 $token = 'YOUR_BOT_TOKEN';
