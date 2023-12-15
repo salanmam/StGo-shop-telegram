@@ -28,7 +28,7 @@ function bot($method,$datas=[]){
 	$globalVariable = "This is a global variable.";
 
 function getGlobalVariable() {
-    global $globalVariable; // Access the global variable within the function
+    global $globalVariable; // Access the lobal variable within the function
     return $globalVariable; // Return its value
 }
 
